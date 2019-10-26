@@ -1,8 +1,11 @@
 import java.util.List;
 import java.util.ArrayList;
 
-class Calculator
-{
+class Test{
+
+    public static void main(String[] args) {
+        System.out.println(calculate("3+(7+3*2)+(2*2)"));
+    }
     static String calculate(String result){
 
         if(result.matches(".*[(].*")){
