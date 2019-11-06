@@ -20,26 +20,26 @@ class MyPanel extends JPanel{
         results.setBounds(0, 0, 200, 50);
 
         digits = new JButton[4][5];
-        digits[0][0] = new JButton("7");
-        digits[0][1] = new JButton("4");
-        digits[0][2] = new JButton("1");
-        digits[0][3] = new JButton("0");
-        digits[0][4] = new JButton("(");
-        digits[1][0] = new JButton("8");
-        digits[1][1] = new JButton("5");
-        digits[1][2] = new JButton("2");
-        digits[1][3] = new JButton(".");
-        digits[1][4] = new JButton(")");
-        digits[2][0] = new JButton("9");
-        digits[2][1] = new JButton("6");
-        digits[2][2] = new JButton("3");
-        digits[2][3] = new JButton("/");
-        digits[2][4] = new JButton("CE");
-        digits[3][0] = new JButton("+");
-        digits[3][1] = new JButton("-");
-        digits[3][2] = new JButton("*");
-        digits[3][3] = new JButton("=");
-        digits[3][4] = new JButton("C");
+        digits[0][0] = new JButton("(");
+        digits[0][1] = new JButton("7");
+        digits[0][2] = new JButton("4");
+        digits[0][3] = new JButton("1");
+        digits[0][4] = new JButton("0");
+        digits[1][0] = new JButton(")");
+        digits[1][1] = new JButton("8");
+        digits[1][2] = new JButton("5");
+        digits[1][3] = new JButton("2");
+        digits[1][4] = new JButton(".");
+        digits[2][0] = new JButton("CE");
+        digits[2][1] = new JButton("9");
+        digits[2][2] = new JButton("6");
+        digits[2][3] = new JButton("3");
+        digits[2][4] = new JButton("/");
+        digits[3][0] = new JButton("C");
+        digits[3][1] = new JButton("+");
+        digits[3][2] = new JButton("-");
+        digits[3][3] = new JButton("*");
+        digits[3][4] = new JButton("=");
     }
 
     private void addFields() {
