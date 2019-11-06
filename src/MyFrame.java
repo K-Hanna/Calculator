@@ -5,7 +5,7 @@ class MyFrame extends JFrame {
 
     MyFrame(){
 
-        setSize(205,280);
+        setSize(205,330);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = (int)screenSize.getWidth();
