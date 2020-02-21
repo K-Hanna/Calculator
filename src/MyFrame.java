@@ -1,11 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 class MyFrame extends JFrame {
 
     MyFrame(){
 
-        setSize(205,330);
+        setSize(215,340);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = (int)screenSize.getWidth();
@@ -19,5 +21,12 @@ class MyFrame extends JFrame {
 
         MyPanel myPanel = new MyPanel();
         add(myPanel);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+                myPanel.getButton().requestFocus();
+            }
+        });
     }
 }
